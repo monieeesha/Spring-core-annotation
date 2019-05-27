@@ -5,7 +5,10 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Movie {
+
+    @Autowired
     private Actor actor;
+
     private String mname;
     public String getMname() {
         return mname;
@@ -26,8 +29,8 @@ public class Movie {
         return actor;
     }
 
-    public Movie(Actor actor, String mname) {
-        this.actor = actor;
+
+    public Movie(String mname) {
         this.mname = mname;
     }
 

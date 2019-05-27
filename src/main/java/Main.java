@@ -9,21 +9,9 @@ public class Main {
         ctx.register(AppConfig.class);
         ctx.refresh();
 
-        //singleton scope
+
         Movie movie = (Movie) ctx.getBean("movie1");
         System.out.println(movie);
-
-        Movie movie1 = (Movie) ctx.getBean("movie1");
-        System.out.println(movie1==movie);
-
-        //prototype scope
-        Movie movie2 = (Movie) ctx.getBean("movie2");
-        System.out.println(movie2);
-        System.out.println(movie==movie2);
-
-        Movie movie3 = (Movie) ctx.getBean("movie3");
-        System.out.println(movie3);
-        System.out.println(movie3==movie2);
 
 
     }
