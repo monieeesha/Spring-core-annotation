@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Scope;
 @Configuration
 public class SpringBeanConfiguration {
 
-
+//through constructor
     @Bean(name="movie1")
     public Movie getMovie(){
 
@@ -30,7 +30,7 @@ public class SpringBeanConfiguration {
     public Movie getMovie2(){
 
         Actor actor=new Actor("ranbir",36,3);
-        Movie movie=new Movie(actor,"ramleela");
+        Movie movie=new Movie(actor,"ramleel");
         return movie;
 
     }
