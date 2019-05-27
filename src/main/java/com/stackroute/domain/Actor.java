@@ -10,8 +10,7 @@ public class Actor {
     private int age;
     private int aid;
 
-
-   public Actor()
+    public Actor()
    {
 
    }
